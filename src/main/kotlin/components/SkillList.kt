@@ -7,6 +7,7 @@ import kotlinx.css.color
 import kotlinx.css.display
 import kotlinx.css.flexDirection
 import kotlinx.css.fontSize
+import kotlinx.css.margin
 import kotlinx.css.px
 import react.RBuilder
 import styled.css
@@ -25,6 +26,10 @@ private fun RBuilder.col(skills: List<String>) {
                     fontSize = 20.px
                 }
             }
+        }
+
+        css {
+            margin(horizontal = 20.px)
         }
     }
 }
