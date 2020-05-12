@@ -15,6 +15,8 @@ import styled.styledDiv
 fun RBuilder.root() {
     styledDiv {
         aboutMeSection()
+        skillsSection()
+
         css {
             display = Display.flex
             flexDirection = FlexDirection.column

@@ -1,9 +1,11 @@
 package components
 
 import kotlinx.css.Color
+import kotlinx.css.TextAlign
 import kotlinx.css.color
 import kotlinx.css.fontSize
 import kotlinx.css.px
+import kotlinx.css.textAlign
 import react.RBuilder
 import styled.css
 import styled.styledH2
@@ -15,6 +17,7 @@ fun RBuilder.sectionTitle(title: String) {
         css {
             color = Color.white
             fontSize = 48.px
+            textAlign = TextAlign.center
         }
     }
 }
