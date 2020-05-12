@@ -25,7 +25,7 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
             + info.key
 
             css {
-                width = 64.px
+                width = 100.px
                 padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
                 color = Color.white
                 textAlign = TextAlign.end
@@ -35,7 +35,7 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
             + info.value
 
             css {
-                width = 256.px
+                width = 400.px
                 padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
                 color = Color.white
             }
@@ -60,6 +60,7 @@ fun RBuilder.aboutMeTable(
         css {
             display = Display.flex
             flexDirection = FlexDirection.column
+            justifyContent = JustifyContent.center
         }
     }
 }
