@@ -16,7 +16,7 @@ fun RBuilder.icon(src: String) {
             display = Display.block
             width = 200.px
             height = 200.px
-            padding(20.px)
+            padding(40.px)
         }
     }
 }

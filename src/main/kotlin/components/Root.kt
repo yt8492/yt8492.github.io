@@ -16,6 +16,7 @@ fun RBuilder.root() {
     styledDiv {
         aboutMeSection()
         skillsSection()
+        linksSection()
 
         css {
             display = Display.flex

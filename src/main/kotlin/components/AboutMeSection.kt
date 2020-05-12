@@ -23,7 +23,7 @@ fun RBuilder.aboutMeSection() {
     styledSection {
         sectionTitle("About me")
         styledDiv {
-            icon("./yt8492.jpg")
+            icon("icon/yt8492.jpg")
             aboutMeTable(tableContent)
             css {
                 display = Display.flex
