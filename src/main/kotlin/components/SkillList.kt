@@ -6,6 +6,8 @@ import kotlinx.css.FlexDirection
 import kotlinx.css.color
 import kotlinx.css.display
 import kotlinx.css.flexDirection
+import kotlinx.css.fontSize
+import kotlinx.css.px
 import react.RBuilder
 import styled.css
 import styled.styledDiv
@@ -20,6 +22,7 @@ private fun RBuilder.col(skills: List<String>) {
 
                 css {
                     color = Color.white
+                    fontSize = 20.px
                 }
             }
         }

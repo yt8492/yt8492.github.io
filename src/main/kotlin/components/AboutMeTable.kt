@@ -8,6 +8,7 @@ import kotlinx.css.TextAlign
 import kotlinx.css.color
 import kotlinx.css.display
 import kotlinx.css.flexDirection
+import kotlinx.css.fontSize
 import kotlinx.css.justifyContent
 import kotlinx.css.padding
 import kotlinx.css.px
@@ -29,6 +30,7 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
                 padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
                 color = Color.white
                 textAlign = TextAlign.end
+                fontSize = 16.px
             }
         }
         styledDiv {
@@ -38,6 +40,7 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
                 width = 400.px
                 padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
                 color = Color.white
+                fontSize = 16.px
             }
         }
 
