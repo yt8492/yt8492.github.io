@@ -1,6 +1,9 @@
 package components
 
+import kotlinx.css.margin
+import kotlinx.css.px
 import react.RBuilder
+import styled.css
 import styled.styledSection
 
 private val skills = listOf(
@@ -24,5 +27,9 @@ fun RBuilder.skillsSection() {
     styledSection {
         sectionTitle("Skills")
         skillList(skills)
+
+        css {
+            margin(top = 40.px)
+        }
     }
 }

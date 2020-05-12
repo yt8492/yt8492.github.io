@@ -4,6 +4,7 @@ import kotlinx.css.Color
 import kotlinx.css.TextAlign
 import kotlinx.css.color
 import kotlinx.css.fontSize
+import kotlinx.css.margin
 import kotlinx.css.px
 import kotlinx.css.textAlign
 import react.RBuilder
@@ -18,6 +19,7 @@ fun RBuilder.sectionTitle(title: String) {
             color = Color.white
             fontSize = 48.px
             textAlign = TextAlign.center
+            margin(top = 20.px, bottom = 20.px)
         }
     }
 }
