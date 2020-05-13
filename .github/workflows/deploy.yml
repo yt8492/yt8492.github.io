@@ -28,3 +28,4 @@ jobs:
         publish_dir: ./public
         publish_branch: master
         disable_nojekyll: true
+        cname: yt8492.com
