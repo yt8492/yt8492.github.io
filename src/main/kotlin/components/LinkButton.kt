@@ -12,6 +12,8 @@ import kotlinx.css.margin
 import kotlinx.css.padding
 import kotlinx.css.pct
 import kotlinx.css.properties.LineHeight
+import kotlinx.css.properties.scale
+import kotlinx.css.properties.transform
 import kotlinx.css.px
 import kotlinx.css.width
 import react.RBuilder
@@ -36,6 +38,12 @@ fun RBuilder.linkButton(src: String, url: String) {
             lineHeight = LineHeight("50px")
             backgroundColor = Color.whiteSmoke
             borderRadius = 50.pct
+
+            hover {
+                transform {
+                    scale(1.1, 1.1)
+                }
+            }
         }
     }
 }
