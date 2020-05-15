@@ -7,6 +7,7 @@ import kotlinx.css.JustifyContent
 import kotlinx.css.alignItems
 import kotlinx.css.display
 import kotlinx.css.flexDirection
+import kotlinx.css.fontFamily
 import kotlinx.css.justifyContent
 import react.RBuilder
 import styled.css
@@ -23,6 +24,7 @@ fun RBuilder.root() {
             flexDirection = FlexDirection.column
             justifyContent = JustifyContent.center
             alignItems = Align.center
+            fontFamily = "\"Hiragino Kaku Gothic ProN\", \"Meiryo\", sans-serif"
         }
     }
 }
