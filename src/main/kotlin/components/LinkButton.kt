@@ -17,12 +17,15 @@ import kotlinx.css.properties.transform
 import kotlinx.css.px
 import kotlinx.css.width
 import react.RBuilder
+import react.dom.key
 import styled.css
 import styled.styledA
 import styled.styledImg
 
 fun RBuilder.linkButton(src: String, url: String) {
     styledA(href = url, target = "_blank") {
+        attrs.key = url
+
         styledImg(src = src) {
             css {
                 width = LinearDimension.inherit

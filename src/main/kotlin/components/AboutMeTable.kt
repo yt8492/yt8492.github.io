@@ -15,6 +15,7 @@ import kotlinx.css.px
 import kotlinx.css.textAlign
 import kotlinx.css.width
 import react.RBuilder
+import react.dom.key
 import styled.css
 import styled.styledDiv
 
@@ -22,6 +23,8 @@ data class AboutMeTableInfo(val key: String, val value: String)
 
 private fun RBuilder.row(info: AboutMeTableInfo) {
     styledDiv {
+        attrs.key = info.toString()
+
         styledDiv {
             + info.key
 

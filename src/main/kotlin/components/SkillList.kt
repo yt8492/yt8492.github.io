@@ -10,6 +10,7 @@ import kotlinx.css.fontSize
 import kotlinx.css.margin
 import kotlinx.css.px
 import react.RBuilder
+import react.dom.key
 import styled.css
 import styled.styledDiv
 import styled.styledLi
@@ -20,6 +21,7 @@ private fun RBuilder.col(skills: List<String>) {
         skills.forEach {
             styledLi {
                 + it
+                attrs.key = it
 
                 css {
                     color = Color.white

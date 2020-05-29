@@ -4,7 +4,7 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="true" externalProjectId="MyPage" pureKotlinSourceFolders="$MODULE_DIR$/../../src/test/kotlin;/Users/yt8492/IdeaProjects/MyPage/src/main/kotlin">
         <sourceSets>
-          <sourceSet>MyPage.main~1</sourceSet>
+          <sourceSet>MyPage.main</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <externalSystemTestTasks>browserTest|MyPage:test|Js</externalSystemTestTasks>
