@@ -17,6 +17,7 @@ fun RBuilder.root() {
     styledDiv {
         aboutMeSection()
         skillsSection()
+        activitySection()
         linksSection()
 
         css {
