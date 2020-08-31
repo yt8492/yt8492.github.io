@@ -9,6 +9,7 @@ import styled.styledSection
 private val activityContents = listOf(
     Activity("2018/04 ~ now", "Zli", "代表(2020~)"),
     Activity("2018/12 ~ now", "The Designium インターン"),
+    Activity("2020/08", "DeNA サマーインターン"),
     Activity("2020/03", "リクルート インターン"),
     Activity("2020/02", "2222ハッカソン"),
     Activity("2019/09", "Discovery Hackathon 2019"),
