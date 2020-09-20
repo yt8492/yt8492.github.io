@@ -65,7 +65,7 @@ private fun RBuilder.row(activity: Activity) {
             css {
                 display = Display.flex
                 flexDirection = FlexDirection.row
-                width = 370.px
+                width = 480.px
                 color = Color.white
                 fontSize = 16.px
             }
