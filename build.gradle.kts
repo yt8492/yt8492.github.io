@@ -16,11 +16,10 @@ dependencies {
     implementation("org.jetbrains:kotlin-react-dom:16.13.1-pre.112-kotlin-1.4.0")
     implementation("org.jetbrains:kotlin-css:1.0.0-pre.112-kotlin-1.4.0")
     implementation("org.jetbrains:kotlin-styled:1.0.0-pre.112-kotlin-1.4.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-html-js:0.7.2")
 }
 
 kotlin {
-    target {
+    js {
         browser {
             webpackTask {
                 outputFileName = "main.js"
