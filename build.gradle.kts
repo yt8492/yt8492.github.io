@@ -19,7 +19,7 @@ dependencies {
 }
 
 kotlin {
-    js {
+    js(IR) {
         browser {
             webpackTask {
                 outputFileName = "main.js"
@@ -28,6 +28,7 @@ kotlin {
                 outputFileName = "main.js"
             }
         }
+        binaries.executable()
     }
 }
 
