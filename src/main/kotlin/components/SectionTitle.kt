@@ -7,6 +7,7 @@ import kotlinx.css.fontSize
 import kotlinx.css.margin
 import kotlinx.css.px
 import kotlinx.css.textAlign
+import mobile
 import react.RBuilder
 import styled.css
 import styled.styledH2
@@ -20,6 +21,10 @@ fun RBuilder.sectionTitle(title: String) {
             fontSize = 48.px
             textAlign = TextAlign.center
             margin(top = 20.px, bottom = 20.px)
+
+            mobile {
+                fontSize = 32.px
+            }
         }
     }
 }

@@ -6,6 +6,7 @@ import kotlinx.css.FlexDirection
 import kotlinx.css.alignItems
 import kotlinx.css.display
 import kotlinx.css.flexDirection
+import mobile
 import react.RBuilder
 import styled.css
 import styled.styledDiv
@@ -29,6 +30,10 @@ fun RBuilder.aboutMeSection() {
             css {
                 display = Display.flex
                 flexDirection = FlexDirection.row
+                mobile {
+                    flexDirection = FlexDirection.column
+                    alignItems = Align.center
+                }
             }
         }
         css {

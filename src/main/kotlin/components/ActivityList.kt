@@ -13,9 +13,14 @@ import kotlinx.css.fontSize
 import kotlinx.css.fontWeight
 import kotlinx.css.justifyContent
 import kotlinx.css.padding
+import kotlinx.css.paddingBottom
+import kotlinx.css.paddingLeft
+import kotlinx.css.paddingRight
+import kotlinx.css.paddingTop
 import kotlinx.css.px
 import kotlinx.css.textAlign
 import kotlinx.css.width
+import mobile
 import react.RBuilder
 import react.dom.key
 import styled.css
@@ -36,10 +41,15 @@ private fun RBuilder.row(activity: Activity) {
 
             css {
                 width = 200.px
-                padding(top = 8.px, right = 8.px, bottom = 8.px, left = 8.px)
+                paddingLeft = 8.px
+                paddingRight = 8.px
                 color = Color.white
                 textAlign = TextAlign.start
                 fontSize = 16.px
+
+                mobile {
+                    width = 100.px
+                }
             }
         }
 
@@ -48,7 +58,8 @@ private fun RBuilder.row(activity: Activity) {
                 + activity.activityName
 
                 css {
-                    padding(top = 8.px, right = 8.px, bottom = 8.px, left = 8.px)
+                    paddingLeft = 8.px
+                    paddingRight = 8.px
                 }
             }
             activity.result?.let { result ->
@@ -56,8 +67,14 @@ private fun RBuilder.row(activity: Activity) {
                     + result
 
                     css {
-                        padding(top = 8.px, right = 8.px, bottom = 8.px, left = 8.px)
+                        paddingLeft = 8.px
+                        paddingRight = 8.px
                         fontWeight = FontWeight.bold
+
+                        mobile {
+                            paddingTop = 2.px
+                            paddingBottom = 2.px
+                        }
                     }
                 }
             }
@@ -68,12 +85,19 @@ private fun RBuilder.row(activity: Activity) {
                 width = 480.px
                 color = Color.white
                 fontSize = 16.px
+
+                mobile {
+                    flexDirection = FlexDirection.column
+                    width = 220.px
+                }
             }
         }
 
         css {
             display = Display.flex
             flexDirection = FlexDirection.row
+            paddingTop = 8.px
+            paddingBottom = 8.px
         }
     }
 }

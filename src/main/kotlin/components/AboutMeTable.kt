@@ -14,6 +14,7 @@ import kotlinx.css.padding
 import kotlinx.css.px
 import kotlinx.css.textAlign
 import kotlinx.css.width
+import mobile
 import react.RBuilder
 import react.dom.key
 import styled.css
@@ -34,6 +35,10 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
                 color = Color.white
                 textAlign = TextAlign.end
                 fontSize = 16.px
+
+                mobile {
+                    width = 80.px
+                }
             }
         }
         styledDiv {
@@ -44,6 +49,10 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
                 padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
                 color = Color.white
                 fontSize = 16.px
+
+                mobile {
+                    width = 240.px
+                }
             }
         }
 

@@ -2,10 +2,15 @@ package components
 
 import kotlinx.css.Display
 import kotlinx.css.FlexDirection
+import kotlinx.css.FlexWrap
+import kotlinx.css.JustifyContent
 import kotlinx.css.display
 import kotlinx.css.flexDirection
+import kotlinx.css.flexWrap
+import kotlinx.css.justifyContent
 import kotlinx.css.margin
 import kotlinx.css.px
+import mobile
 import react.RBuilder
 import styled.css
 import styled.styledDiv
@@ -31,6 +36,11 @@ fun RBuilder.linksSection() {
             css {
                 display = Display.flex
                 flexDirection = FlexDirection.row
+
+                mobile {
+                    flexWrap = FlexWrap.wrap
+                    justifyContent = JustifyContent.center
+                }
             }
         }
 
