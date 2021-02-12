@@ -1,5 +1,5 @@
 plugins {
-    id("org.jetbrains.kotlin.js") version "1.4.0"
+    kotlin("js") version "1.4.30"
 }
 
 group = "com.yt8492"
@@ -12,10 +12,10 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-js"))
-    implementation("org.jetbrains:kotlin-react:16.13.1-pre.112-kotlin-1.4.0")
-    implementation("org.jetbrains:kotlin-react-dom:16.13.1-pre.112-kotlin-1.4.0")
-    implementation("org.jetbrains:kotlin-css:1.0.0-pre.112-kotlin-1.4.0")
-    implementation("org.jetbrains:kotlin-styled:1.0.0-pre.112-kotlin-1.4.0")
+    implementation("org.jetbrains:kotlin-react:17.0.1-pre.144-kotlin-1.4.30")
+    implementation("org.jetbrains:kotlin-react-dom:17.0.1-pre.144-kotlin-1.4.30")
+    implementation("org.jetbrains:kotlin-css:1.0.0-pre.144-kotlin-1.4.30")
+    implementation("org.jetbrains:kotlin-styled:5.2.0-pre.144-kotlin-1.4.30")
 }
 
 kotlin {
