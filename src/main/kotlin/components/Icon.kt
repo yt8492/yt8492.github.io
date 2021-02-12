@@ -6,6 +6,7 @@ import kotlinx.css.height
 import kotlinx.css.padding
 import kotlinx.css.px
 import kotlinx.css.width
+import mobile
 import react.RBuilder
 import styled.css
 import styled.styledImg
@@ -17,6 +18,11 @@ fun RBuilder.icon(src: String) {
             width = 200.px
             height = 200.px
             padding(40.px)
+
+            mobile {
+                width = 150.px
+                height = 150.px
+            }
         }
     }
 }
