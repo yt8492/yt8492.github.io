@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ssg">
+    <output-path>$PROJECT_DIR$/ssg/build/libs</output-path>
+    <root id="archive" name="ssg.jar">
+      <element id="module-output" name="MyPage.ssg.main" />
+    </root>
+  </artifact>
+</component>
