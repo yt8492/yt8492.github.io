@@ -31,7 +31,7 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
 
             css {
                 width = 100.px
-                padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
+                padding(top = 8.px, right = 12.px, bottom = 8.px, left = 0.px)
                 color = Color.white
                 textAlign = TextAlign.end
                 fontSize = 16.px
@@ -46,7 +46,7 @@ private fun RBuilder.row(info: AboutMeTableInfo) {
 
             css {
                 width = 400.px
-                padding(top = 8.px, right = 12.px, bottom = 8.px, left = 12.px)
+                padding(top = 8.px, right = 0.px, bottom = 8.px, left = 12.px)
                 color = Color.white
                 fontSize = 16.px
 
