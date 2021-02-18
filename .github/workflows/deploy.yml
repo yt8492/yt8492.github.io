@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: '12'
     - name: Generate HTML
-      run: node ssg/build/distributions/main.js && mv index.js public
+      run: node ssg/build/distributions/main.js && mv index.html public
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
