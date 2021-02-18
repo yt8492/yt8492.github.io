@@ -12,7 +12,6 @@ import kotlinx.css.flexDirection
 import kotlinx.css.fontSize
 import kotlinx.css.fontWeight
 import kotlinx.css.justifyContent
-import kotlinx.css.padding
 import kotlinx.css.paddingBottom
 import kotlinx.css.paddingLeft
 import kotlinx.css.paddingRight

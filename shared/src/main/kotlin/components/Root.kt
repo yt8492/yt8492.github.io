@@ -9,11 +9,12 @@ import kotlinx.css.display
 import kotlinx.css.flexDirection
 import kotlinx.css.fontFamily
 import kotlinx.css.justifyContent
-import react.RBuilder
+import react.RProps
+import react.functionalComponent
 import styled.css
 import styled.styledDiv
 
-fun RBuilder.root() {
+val root = functionalComponent<RProps> {
     styledDiv {
         aboutMeSection()
         skillsSection()
