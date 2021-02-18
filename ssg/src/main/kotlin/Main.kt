@@ -12,22 +12,20 @@ fun main() {
     val style = sheet.getStyleElement()
     val header = renderToString(style)
     sheet.seal()
-    val html = """
-<!DOCTYPE html>
+    val html = """<!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
-    <meta name="keywords" content="yt8492,マヤミト,富山雄太,Yuta Tomiyama">
-    <title>yt8492.com</title>
-    $header
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+<meta name="keywords" content="yt8492,マヤミト,富山雄太,Yuta Tomiyama">
+<title>yt8492.com</title>
+$header
 </head>
 <body>
 $component
 </body>
-</html>
-"""
+</html>"""
     fs.writeFile("index.html", html) {
         println("Generate HTML Success")
     }

@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.Kotlin2JsCompile
+
 plugins {
     kotlin("js")
 }
@@ -27,4 +29,24 @@ kotlin {
         nodejs()
         binaries.executable()
     }
+}
+
+val browserWebpack = tasks.withType<Kotlin2JsCompile>()
+
+val copyDistributions by tasks.registering {
+    doLast {
+        copy {
+            val destinationDir = File("$rootDir/public")
+            if (!destinationDir.exists()) {
+                destinationDir.mkdir()
+            }
+            val distributions = File("$buildDir/distributions/")
+            from(distributions)
+            into(destinationDir)
+        }
+    }
+}
+
+browserWebpack.forEach {
+    it.finalizedBy(copyDistributions)
 }
