@@ -1,15 +1,15 @@
 import components.root
+import lib.EmptyProps
+import lib.ReactDOMServer
 import lib.ServerStyleSheet
-import lib.renderToString
-import react.RProps
 import react.createElement
 
 fun main() {
     val sheet = ServerStyleSheet()
-    val content = sheet.collectStyles(createElement(root, object : RProps {}))
-    val component = renderToString(content)
+    val content = sheet.collectStyles(createElement(root, EmptyProps))
+    val component = ReactDOMServer.renderToString(content)
     val style = sheet.getStyleElement()
-    val header = renderToString(style)
+    val header = ReactDOMServer.renderToString(style)
     sheet.seal()
     val html = """<!DOCTYPE html>
 <html lang="ja">

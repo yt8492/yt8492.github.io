@@ -1,8 +1,10 @@
-@file:JsModule("react-dom/server")
-@file:JsNonModule
 package lib
 
 import react.ReactElement
 
-external fun renderToString(reactNode: ReactElement): String
-external fun renderToString(reactNode: Array<ReactElement>): String
+@JsModule("react-dom/server")
+@JsNonModule
+external object ReactDOMServer {
+    fun renderToString(reactNode: ReactElement): String
+    fun renderToString(reactNode: Array<ReactElement>): String
+}
