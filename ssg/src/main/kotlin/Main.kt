@@ -5,7 +5,6 @@ import react.RProps
 import react.createElement
 
 fun main() {
-    println(process.cwd())
     val sheet = ServerStyleSheet()
     val content = sheet.collectStyles(createElement(root, object : RProps {}))
     val component = renderToString(content)
