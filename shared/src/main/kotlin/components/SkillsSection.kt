@@ -12,7 +12,7 @@ private val skills = listOf(
     "Scala",
     "Swift",
     "Go",
-    "JavaScript / TypeScript",
+    "TypeScript",
     "React",
     "Android",
     "iOS",
