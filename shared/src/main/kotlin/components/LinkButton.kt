@@ -1,6 +1,5 @@
 package components
 
-import kotlinx.css.Color
 import kotlinx.css.Display
 import kotlinx.css.LinearDimension
 import kotlinx.css.backgroundColor
@@ -21,6 +20,7 @@ import react.dom.key
 import styled.css
 import styled.styledA
 import styled.styledImg
+import values.Colors
 
 fun RBuilder.linkButton(src: String, url: String) {
     styledA(href = url, target = "_blank") {
@@ -39,7 +39,7 @@ fun RBuilder.linkButton(src: String, url: String) {
             padding(12.px)
             margin(20.px)
             lineHeight = LineHeight("50px")
-            backgroundColor = Color.whiteSmoke
+            backgroundColor = Colors.text
             borderRadius = 50.pct
 
             hover {

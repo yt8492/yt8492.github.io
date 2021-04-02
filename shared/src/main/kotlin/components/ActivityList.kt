@@ -1,6 +1,5 @@
 package components
 
-import kotlinx.css.Color
 import kotlinx.css.Display
 import kotlinx.css.FlexDirection
 import kotlinx.css.FontWeight
@@ -24,6 +23,7 @@ import react.RBuilder
 import react.dom.key
 import styled.css
 import styled.styledDiv
+import values.Colors
 
 data class Activity(
     val term: String,
@@ -42,7 +42,7 @@ private fun RBuilder.row(activity: Activity) {
                 width = 200.px
                 paddingLeft = 8.px
                 paddingRight = 8.px
-                color = Color.white
+                color = Colors.text
                 textAlign = TextAlign.start
                 fontSize = 16.px
 
@@ -82,7 +82,7 @@ private fun RBuilder.row(activity: Activity) {
                 display = Display.flex
                 flexDirection = FlexDirection.row
                 width = 480.px
-                color = Color.white
+                color = Colors.text
                 fontSize = 16.px
 
                 mobile {

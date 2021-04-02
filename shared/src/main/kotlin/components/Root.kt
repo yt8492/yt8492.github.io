@@ -5,6 +5,7 @@ import kotlinx.css.Display
 import kotlinx.css.FlexDirection
 import kotlinx.css.JustifyContent
 import kotlinx.css.alignItems
+import kotlinx.css.backgroundColor
 import kotlinx.css.display
 import kotlinx.css.flexDirection
 import kotlinx.css.fontFamily
@@ -13,6 +14,7 @@ import react.RProps
 import react.functionalComponent
 import styled.css
 import styled.styledDiv
+import values.Colors
 
 val root = functionalComponent<RProps> {
     styledDiv {
@@ -26,6 +28,7 @@ val root = functionalComponent<RProps> {
             flexDirection = FlexDirection.column
             justifyContent = JustifyContent.center
             alignItems = Align.center
+            backgroundColor = Colors.background
             fontFamily = "\"Hiragino Kaku Gothic ProN\", \"Meiryo\", sans-serif"
         }
     }

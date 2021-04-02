@@ -1,6 +1,5 @@
 package components
 
-import kotlinx.css.Color
 import kotlinx.css.Display
 import kotlinx.css.FlexDirection
 import kotlinx.css.color
@@ -15,6 +14,7 @@ import styled.css
 import styled.styledDiv
 import styled.styledLi
 import styled.styledUl
+import values.Colors
 
 private fun RBuilder.col(skills: List<String>) {
     styledUl {
@@ -24,7 +24,7 @@ private fun RBuilder.col(skills: List<String>) {
                 attrs.key = it
 
                 css {
-                    color = Color.white
+                    color = Colors.text
                     fontSize = 20.px
                 }
             }
