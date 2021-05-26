@@ -19,6 +19,13 @@ fun main() {
 <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="keywords" content="yt8492,マヤミト,富山雄太,Yuta Tomiyama">
+<meta property="og:title" content="yt8492's portfolio">
+<meta property="og:type" content="article">
+<meta property="og:description" content="マヤミトのポートフォリオ">
+<meta property="og:url" content="https://yt8492.com">
+<meta property="og:site_name" content="マヤミトのポートフォリオ">
+<meta property="og:image" content="https://yt8492.com/ogp.png">
+<meta name="twitter:card" content="summary">
 <title>yt8492.com</title>
 $header
 </head>
