@@ -1,8 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="csr">
     <output-path>$PROJECT_DIR$/csr/build/libs</output-path>
-    <root id="archive" name="csr.jar">
-      <element id="module-output" name="MyPage.csr.main" />
-    </root>
+    <root id="archive" name="csr.jar" />
   </artifact>
 </component>

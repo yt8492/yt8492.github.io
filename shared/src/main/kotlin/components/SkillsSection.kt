@@ -15,12 +15,14 @@ private val skills = listOf(
     "TypeScript",
     "React",
     "Android",
+    "Jetpack Compose",
     "iOS",
     "Spring Boot",
     "Ktor",
     "Kotlin/JS",
     "Gradle",
     "gRPC / protobuf",
+    "GraphQL",
     "SQL",
     "Git / GitHub"
 )
