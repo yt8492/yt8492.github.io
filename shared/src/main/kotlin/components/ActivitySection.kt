@@ -7,7 +7,8 @@ import styled.css
 import styled.styledSection
 
 private val activityContents = listOf(
-    Activity("2018/04 ~ now", "Zli", "代表(2020)"),
+    Activity("2018/04 ~ now", "Zli", "元代表(2020)"),
+    Activity("2021/08 ~ now", "DMM 内定者インターン"),
     Activity("2021/06 ~ now", "Appify Technologies, Inc."),
     Activity("2018/12 ~ now", "The Designium インターン"),
     Activity("2021/03", "令和2年度起業家甲子園", "審査委員特別賞、その他企業賞"),
