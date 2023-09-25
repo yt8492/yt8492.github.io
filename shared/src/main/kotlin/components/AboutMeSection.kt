@@ -16,7 +16,7 @@ private val tableContent = listOf(
     AboutMeTableInfo("HN", "マヤミト"),
     AboutMeTableInfo("Name", "富山 雄太 (Yuta Tomiyama)"),
     AboutMeTableInfo("BirthDay", "2000/01/19"),
-    AboutMeTableInfo("University", "会津大学 コンピュータ理工学部 (University of Aizu)"),
+    AboutMeTableInfo("Working at", "DMM.com LLC"),
     AboutMeTableInfo("Mail", "contact[at]yt8492.com"),
     AboutMeTableInfo("Hobby", "Kotlin")
 )
