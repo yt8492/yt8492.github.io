@@ -20,7 +20,7 @@ val root = functionalComponent<RProps> {
     styledDiv {
         aboutMeSection()
         skillsSection()
-        activitySection()
+        // activitySection()
         linksSection()
 
         css {
